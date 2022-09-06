@@ -1,17 +1,27 @@
 
-let saludo  = prompt ('BIENVENIDO A TU TARJETA');
-let entrada =  prompt("SELECCIONE DE LA OPCION 1 al 4");
+let espacio = " ";
+let nombre = prompt( "ingrese su nombre");
+let saludo ='hola'+ espacio + nombre + ',bienvenido a tu tarjeta';
+console.log(saludo);
+alert (saludo);
+
+let entrada =  prompt('SELECCIONE una opcion'+espacio+ "1-extraer dinero"+ "2-transferir"+"3-solicitar prestamo"+"4-solicitar adicional");
+
 
 while (entrada != 'ESC') {
     switch (entrada) {
         case "1":
             alert("Extraer dinero");
-            console.log ("1-extraer")
-            break;
+            console.log ("1-extraer");
+            let valor = prompt ( "ingrese el monto");
+            alert("procesando, muchas gracias");
+           break;
         case "2":
             alert("transferir");
             console.log("tranferir dinero")
+        
             break;
+            
         case "3":
             alert("solicitar prestamo");
             console.log("solicitar prestamo")
@@ -25,6 +35,7 @@ while (entrada != 'ESC') {
             console.log ("intenta en otra ocacion")
             break;
     }  
-     let salida = prompt ("adios");
-      break;
+    entrada =  prompt('SELECCIONE una opcion'+espacio+ "1-extraer dinero"+ "2-transferir"+"3-solicitar prestamo"+"4-solicitar adicional");
+
  }
+ 
